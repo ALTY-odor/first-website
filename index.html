@@ -1,20 +1,21 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>My PortFolio</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+<!DOCTYPE html> <!-- Tells the browser this is a modern HTML5 document -->
+<html> <!-- The root tag — everything on your page lives inside this -->
+    <head> <!-- Contains setup info — not visible on the page itself -->
+        <title>My PortFolio</title> <!-- The text shown on the browser tab -->
+        <link rel="stylesheet" type="text/css" href="style.css"> <!-- Loads your own CSS file -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> <!-- Loads Font Awesome from the internet — gives you access to thousands of icons -->
     </head>
-    <body>
-      <h1>Altesse Mihindou</h1>
-      <img src="photo.jpg" alt="Altesse Mihindou">
-      <p>Web Developer based in Libreville</p>
+    <body> <!-- Everything visible on the page goes here -->
+      <h1>Altesse Mihindou</h1> <!-- Biggest heading — use only once per page, for your main title -->
+      <img src="photo.jpg" alt="Altesse Mihindou"> <!-- Displays an image. src= is the file path. alt= is text shown if the image fails to load -->
+      <p>Web Developer based in Libreville</p> <!-- A paragraph of text -->
       
-      <div class="Dark-section">
-         <h2>About Me</h2>
+      <div class="Dark-section"> <!-- div is an invisible box used to group elements. class= lets you target it in CSS -->
+         <h2>About Me</h2> <!-- Second-level heading — smaller than h1 -->
            <p>I build clean, fast websites for local businesses in Libreville.</p>
            <p>Currently developing Santé Proche, a health tech app connecting patients with pharmacies in real time.</p>
            <p>Available for landing pages, business sites, and e-commerce.</p>
-     </div>
+     </div> <!-- Closing tag — every opening tag needs a matching closing tag with a / -->
       
       <h2>Services</h2>
       <p>Landing Pages — a single page presenting your business, your offer, and your contacts.</p> 
@@ -25,9 +26,21 @@
          <h2>Projects</h2>
            <p>Santé Proche — A health tech app connecting patients with pharmacies showing real-time medication availability in Libreville. Currently in development.</p>
       </div>
+
       <h2>Contact Me</h2>
-       <a href="https://wa.me/24176317484">WhatsApp</a> <br>
-       <a href="https://www.facebook.com/altessemihindou">Facebook</a> <br>
-       <a href="https://www.instagram.com/altessemihindou">Instagram</a>
+      <div class="contact-links"> <!-- A div grouping the 3 buttons so CSS can style them as a row -->
+        <a class="contact-link wa" href="https://wa.me/24176317484"> <!-- a is a link tag. href= is the URL. Two classes: contact-link for shared style, wa for WhatsApp color -->
+          <i class="fa-brands fa-whatsapp"></i> <!-- i tag + Font Awesome class = draws the WhatsApp logo -->
+          WhatsApp
+        </a>
+        <a class="contact-link fb" href="https://www.facebook.com/altessemihindou">
+          <i class="fa-brands fa-facebook"></i> <!-- fa-facebook tells Font Awesome which logo to draw -->
+          Facebook
+        </a>
+        <a class="contact-link ig" href="https://www.instagram.com/altessemihindou">
+          <i class="fa-brands fa-instagram"></i> <!-- fa-instagram draws the Instagram logo -->
+          Instagram
+        </a>
+      </div>
     </body>
 </html>

@@ -1,3 +1,4 @@
+/* Targets the entire page — sets the default font, background color, text color, and alignment */
 body 
 {
   font-family: Arial, sans-serif;
@@ -5,48 +6,77 @@ body
   color: #333333;
   text-align: center;
 }
+
+/* Targets all h1 elements — your main name title */
 h1
 {
   color: #E8784A;
   font-size: 48px;
   font-weight: bold;
-
 }
+
+/* Targets all h2 elements — your section titles like About Me, Services etc */
 h2
 {
   color: #2B2D42;
   font-size: 36px;
   font-weight: bold;
 }
+
+/* Targets all paragraph elements */
 p{
- font-style: italic;
+ font-style: italic; /* Makes all paragraph text slanted */
  font-size: 16px;
-  
 }
+
+/* Targets all link elements — sets the default color for every <a> tag */
 a
 {
   color: #E8784A;
   font-weight: bold;
 }
+
+/* Targets all images — controls the size and shape of your profile photo */
 img
 {
-  max-width: 200px;
+  max-width: 200px; /* Image will never be wider than 200px */
   height: 200px;
-  border-radius: 50%;
-
+  border-radius: 50%; /* Makes the image a perfect circle */
 }
+
+/* Targets any element with class="Dark-section" — the . means class */
 .Dark-section
 {
   background-color: #2B2D42;
   color: #FFFFFF;
-  
 }
 
+/* Targets h2 elements that are inside a Dark-section — overrides the general h2 color above */
 .Dark-section h2
 {
   color: #E8784A;
 }
+
+/* Targets p elements that are inside a Dark-section — overrides the general body color */
 .Dark-section p
 {
   color: #FFFFFF;
+}
+
+/* Targets the WhatsApp link specifically — overrides the general orange color set by the a rule above */
+.contact-link.wa
+{
+  color: #25D366; /* WhatsApp green */
+}
+
+/* Targets the Facebook link specifically */
+.contact-link.fb
+{
+  color: #1877F2; /* Facebook blue */
+}
+
+/* Targets the Instagram link specifically */
+.contact-link.ig
+{
+  color: #E1306C; /* Instagram pink */
 }
